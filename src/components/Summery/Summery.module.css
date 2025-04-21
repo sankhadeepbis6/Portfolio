@@ -1,0 +1,35 @@
+.profile {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.topRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.profileName {
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.profileTitle {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.profileDescription {
+    margin-top: 0.6rem;
+    color: #f0d1d1;
+    text-align: left;
+}
