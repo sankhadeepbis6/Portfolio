@@ -1,5 +1,4 @@
 .section {
-    margin-bottom: 100px;
     padding: 0;
 }
 
@@ -33,4 +32,8 @@
 .duration {
     font-size: 1.2rem;
     color: #666;
+}
+
+.description {
+    text-align: left;
 }
