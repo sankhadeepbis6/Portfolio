@@ -1,10 +1,10 @@
 import BoldText from "../BoldText/BoldText";
 import ContainCard from "../ContainCard/ContainCard";
 import SplitTitle from "../SplitTitle/SplitTitle";
-import styles from "./Experience.module.css";
+import styles from "./Education.module.css";
 
-const Experience = ({
-    header = "Work Experience",
+const Education = ({
+    header = "Education",
     contents
 }) => {
     return (
@@ -14,15 +14,16 @@ const Experience = ({
                 {contents.map((content, index) => (
                     <div key={index} className={styles.content}>
                         <SplitTitle>
-                            <a href={content.href} target="_blank" className={styles.institution}>{content.institution}</a>
+                            <div className={styles.degree}>{content.degree}</div>
                             <div className={styles.duration}>{content.duration}</div>
                         </SplitTitle>
-                        <div className={styles.title}>{content.title}</div>
-                        <ul className={styles.description}>
+                        <a href={content.href} target="_blank" className={styles.institution}>{content.institution}</a>
+                        <div className={styles.title}><BoldText>{content.score}</BoldText></div>
+                        {content.description.length > 0 && <ul className={styles.description}>
                             {content.description.map((item, index) => (
                                 <li key={index}><BoldText>{item}</BoldText></li>
                             ))}
-                        </ul>
+                        </ul>}
                     </div>
                 ))}
             </section>
@@ -30,4 +31,4 @@ const Experience = ({
     );
 };
 
-export default Experience;
+export default Education;

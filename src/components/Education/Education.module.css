@@ -1,0 +1,45 @@
+.section {
+    padding: 0;
+}
+
+.stickyHeader {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content {
+    padding: 10px;
+}
+
+.title {
+    text-align: left;
+    padding: 5px;
+}
+
+.degree {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.institution {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.duration {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.description {
+    text-align: left;
+}
