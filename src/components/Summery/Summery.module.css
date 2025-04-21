@@ -1,5 +1,5 @@
 .profile {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 1rem;
     font-family: sans-serif;
@@ -30,6 +30,66 @@
 
 .profileDescription {
     margin-top: 0.6rem;
-    color: #f0d1d1;
+    color: #ffffff;
     text-align: left;
+}
+
+.typingWrapper {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typingText {
+    color: #f0e660;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 0.7s infinite;
+    color: #f0e660;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.roundButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f1f4f7;
+    background-color: transparent;
+    border: 2px solid #f1f4f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.roundButton:hover {
+    background-color: #f1f4f7;
+    color: #00bcd4;
+}
+
+.icon {
+    font-size: 1.2rem;
 }
