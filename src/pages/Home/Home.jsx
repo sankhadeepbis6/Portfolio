@@ -1,3 +1,4 @@
+import CodeBackground from '../../components/CodeBackground/CodeBackground';
 import Education from '../../components/Education/Education';
 import Experience from '../../components/Experience/Experience';
 import Skill from '../../components/Skill/Skill';
@@ -55,6 +56,7 @@ const Home = () => {
             <section className={styles.heroSection}>
                 <Summery />
             </section>
+            <CodeBackground />
             <section className={styles.contentSection}>
                 <Experience header="Work Experience"
                     contents={experienceContents} />
