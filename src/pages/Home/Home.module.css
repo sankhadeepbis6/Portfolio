@@ -1,6 +1,6 @@
 .heroSection {
     height: 100vh;
-    background: #00bcd4;
+    /* background: #00bcd4; */
     color: white;
     display: flex;
     align-items: center;
@@ -12,4 +12,21 @@
     padding: 50px;
     background: #f1f1f1;
     font-size: 1.2rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #02444d;
+    /* Dark backdrop to enhance text */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    /* Above the background */
+    padding: 40px;
+    color: white;
 }

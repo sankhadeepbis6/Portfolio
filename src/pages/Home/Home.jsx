@@ -53,10 +53,12 @@ const Home = () => {
 
     return (
         <div>
-            <section className={styles.heroSection}>
-                <Summery />
-            </section>
-            <CodeBackground />
+            <div className={styles.container}>
+                <CodeBackground />
+                <section className={styles.heroSection}>
+                    <Summery />
+                </section>
+            </div>
             <section className={styles.contentSection}>
                 <Experience header="Work Experience"
                     contents={experienceContents} />

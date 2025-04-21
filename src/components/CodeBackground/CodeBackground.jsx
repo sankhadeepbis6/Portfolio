@@ -5,7 +5,23 @@ const titles = [
     "Software Developer",
     "Full Stack Developer",
     "Web Developer",
-    "Tech Explorer"
+    "Tech Explorer",
+    "Software Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Tech Explorer",
+    "Software Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Tech Explorer",
+    "Software Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Tech Explorer",
+    "Software Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Tech Explorer",
 ];
 
 const CodeBackground = () => {
