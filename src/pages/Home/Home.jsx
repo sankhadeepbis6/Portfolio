@@ -60,10 +60,6 @@ const Home = () => {
                     contents={experienceContents} />
                 <Education contents={educationContents} />
                 <Skill header="Skills" />
-                <p>This is the content below the hero section.</p>
-                <p>Scroll down to see more...</p>
-                <p>More content here...</p>
-                <p>Even more content here...</p>
             </section>
         </div>
     );
