@@ -8,9 +8,9 @@ const Experience = ({
     contents
 }) => {
     return (
-        <ContainCard>
-            <section className={styles.section}>
-                <div className={styles.stickyHeader}>{header}</div>
+        <section className={styles.section}>
+            <div className={styles.stickyHeader}>{header}</div>
+            <ContainCard>
                 {contents.map((content, index) => (
                     <div key={index} className={styles.content}>
                         <SplitTitle>
@@ -25,8 +25,8 @@ const Experience = ({
                         </ul>
                     </div>
                 ))}
-            </section>
-        </ContainCard>
+            </ContainCard>
+        </section>
     );
 };
 
