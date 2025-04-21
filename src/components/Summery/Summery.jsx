@@ -3,14 +3,14 @@ import profilePic from '../../assets/profile.jpg';
 import React, { useState, useEffect } from 'react';
 import { FaDownload, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
-const Summery = () => {
+const titles = [
+    "Software Developer",
+    "Full Stack Developer",
+    "Web Developer",
+    "Tech Explorer"
+];
 
-    const titles = [
-        "Software Developer",
-        "Full Stack Developer",
-        "Web Developer",
-        "Tech Explorer"
-    ];
+const Summery = () => {
 
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);

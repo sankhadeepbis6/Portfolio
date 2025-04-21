@@ -9,7 +9,7 @@ const Experience = () => {
                 <div className={styles.stickyHeader}>Work Experience</div>
                 <div className={styles.content}>
                     <SplitTitle>
-                        <a className={styles.institution}>Tata Consultancy Services</a>
+                        <a href="https://www.tcs.com/" className={styles.institution}>Tata Consultancy Services</a>
                         <div className={styles.duration}>08/2021 - Present</div>
                     </SplitTitle>
                     <div className={styles.title} >System Engineer</div>
