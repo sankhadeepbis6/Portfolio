@@ -1,5 +1,6 @@
 import Education from '../../components/Education/Education';
 import Experience from '../../components/Experience/Experience';
+import Skill from '../../components/Skill/Skill';
 import Summery from '../../components/Summery/Summery';
 import styles from './Home.module.css';
 
@@ -58,6 +59,7 @@ const Home = () => {
                 <Experience header="Work Experience"
                     contents={experienceContents} />
                 <Education contents={educationContents} />
+                <Skill header="Skills" />
                 <p>This is the content below the hero section.</p>
                 <p>Scroll down to see more...</p>
                 <p>More content here...</p>
