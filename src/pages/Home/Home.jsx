@@ -1,3 +1,4 @@
+import Experience from '../../components/Experience/Experience';
 import Summery from '../../components/Summery/Summery';
 import styles from './Home.module.css';
 
@@ -8,6 +9,7 @@ const Home = () => {
                 <Summery />
             </section>
             <section className={styles.contentSection}>
+                <Experience />
                 <p>This is the content below the hero section.</p>
                 <p>Scroll down to see more...</p>
                 <p>More content here...</p>

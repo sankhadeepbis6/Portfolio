@@ -1,5 +1,5 @@
 .profile {
-    max-width: 900px;
+    max-width: var(--main-width);
     margin: 2rem auto;
     padding: 1rem;
     font-family: sans-serif;
