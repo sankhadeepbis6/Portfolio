@@ -20,6 +20,9 @@
     line-height: 1.5;
     font-size: 1rem;
     color: #eeede7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .cursor {
@@ -38,5 +41,29 @@
 
     50% {
         opacity: 0;
+    }
+}
+
+.column {
+    display: block;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rightColumn {
+    display: block;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .typingWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .rightColumn {
+        display: none;
     }
 }
