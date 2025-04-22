@@ -44,10 +44,10 @@ const Summery = () => {
                 <img src={profilePic} alt="Profile" className={styles.profilePic} />
                 <div>
                     <div className={styles.profileName}>Hi, I'm Sankhadeep Biswas</div>
-                    <div className={styles.profileTitle}>I'm a <snap className={styles.typingWrapper}>
+                    <div className={styles.profileTitle}>I'm a <span className={styles.typingWrapper}>
                         <span className={styles.typingText}>{text}</span>
                         <span className={styles.cursor}>|</span>
-                    </snap></div>
+                    </span></div>
                 </div>
             </div>
             <p className={styles.profileDescription}>
