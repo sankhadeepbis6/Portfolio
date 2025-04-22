@@ -21,7 +21,7 @@ const Education = ({
                                 <div className={styles.degree}>{content.degree}</div>
                                 <div className={styles.duration}>{content.duration}</div>
                             </SplitTitle>
-                            <a href={content.href} target="_blank" className={styles.institution}>{content.institution}</a>
+                            <a href={content.href} target="_blank" rel="noreferrer" className={styles.institution}>{content.institution}</a>
                             <div className={styles.title}><BoldText>{content.score}</BoldText></div>
                             {content.description.length > 0 && <ul className={styles.description}>
                                 {content.description.map((item, index) => (

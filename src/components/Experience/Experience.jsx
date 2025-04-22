@@ -18,7 +18,7 @@ const Experience = ({
                     {contents.map((content, index) => (
                         <div key={index} className={styles.content}>
                             <SplitTitle>
-                                <a href={content.href} target="_blank" className={styles.institution}>{content.institution}</a>
+                                <a href={content.href} target="_blank" rel="noreferrer" className={styles.institution}>{content.institution}</a>
                                 <div className={styles.duration}>{content.duration}</div>
                             </SplitTitle>
                             <div className={styles.title}>{content.title}</div>
