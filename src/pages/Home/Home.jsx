@@ -1,6 +1,7 @@
 import CodeBackground from '../../components/CodeBackground/CodeBackground';
 import Education from '../../components/Education/Education';
 import Experience from '../../components/Experience/Experience';
+import Footer from '../../components/Footer/Footer';
 import Skill from '../../components/Skill/Skill';
 import Summery from '../../components/Summery/Summery';
 import styles from './Home.module.css';
@@ -65,6 +66,7 @@ const Home = () => {
                 <Education contents={educationContents} />
                 <Skill header="Skills" />
             </section>
+            <Footer />
         </div>
     );
 };
