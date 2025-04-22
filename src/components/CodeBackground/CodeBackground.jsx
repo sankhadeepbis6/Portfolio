@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './CodeBackground.module.css';
 
 const titlesLeft = [
+    "package com.portfolio.demo;",
+    "\n",
     "@Service",
     "public class MongoQueryExecutor {",
     "\tprivate final MongoClient mongoClient;",
@@ -176,22 +178,66 @@ const CodeBackground = () => {
     const { lines: leftLines, lineIndex: leftIndex } = useTypingEffect(titlesLeft);
     const { lines: rightLines, lineIndex: rightIndex } = useTypingEffect(titlesRight);
 
+    const [tabsLeft, setTabsLeft] = useState([
+        { id: 1, name: 'MongoQueryExecutor.java' },
+        { id: 2, name: 'Controller.java' },
+        { id: 3, name: 'Data.java' },
+    ]);
+
+    const closeTabLeft = (id) => {
+        setTabsLeft(tabsLeft.filter(tabsLeft => tabsLeft.id !== id));
+    };
+
+    const [tabsRight, setTabsRight] = useState([
+        { id: 1, name: 'ItemList.jsx' },
+        { id: 2, name: 'Header.jsx' },
+        { id: 3, name: 'Dropdown.jsx' },
+    ]);
+
+    const closeTabRight = (id) => {
+        setTabsRight(tabsRight.filter(tabsRight => tabsRight.id !== id));
+    };
+
     return (
         <div className={styles.profileTitle}>
             <div className={styles.typingWrapper}>
                 <div className={styles.column}>
-                    {leftLines.map((line, i) => (
-                        <div key={i}>
-                            {line}{i === leftIndex && <span className={styles.cursor}>|</span>}
-                        </div>
-                    ))}
+                    <div className={styles.tabHeader}>
+                        {tabsLeft.map((tab) => (
+                            <div key={tab.id} className={styles.tab}>
+                                <span className={styles.tabTitle}>{tab.name}</span>
+                                <span className={styles.closeTab} onClick={() => closeTabLeft(tab.id)}>
+                                    ✖
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={styles.typingText}>
+                        {leftLines.map((line, i) => (
+                            <div key={i}>
+                                {line}{i === leftIndex && <span className={styles.cursor}>|</span>}
+                            </div>
+                        ))}
+                    </div >
                 </div>
                 <div className={`${styles.column} ${styles.rightColumn}`}>
-                    {rightLines.map((line, i) => (
-                        <div key={i}>
-                            {line}{i === rightIndex && <span className={styles.cursor}>|</span>}
-                        </div>
-                    ))}
+                    <div className={styles.tabHeader}>
+                        {tabsRight.map((tab) => (
+                            <div key={tab.id} className={styles.tab}>
+                                <span className={styles.tabTitle}>{tab.name}</span>
+                                <span className={styles.closeTab} onClick={() => closeTabRight(tab.id)}>
+                                    ✖
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={styles.typingText}>
+                        {rightLines.map((line, i) => (
+                            <div key={i}>
+                                {line}{i === rightIndex && <span className={styles.cursor}>|</span>}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

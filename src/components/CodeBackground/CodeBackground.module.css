@@ -6,13 +6,12 @@
     height: 100%;
     /* Ensure it fills the parent height */
     z-index: 0;
-    padding: 20px;
     font-size: 2rem;
     text-align: left;
     pointer-events: none;
     opacity: 0.2;
     /* Faint background effect */
-    filter: blur(0.8px);
+    filter: blur(1px);
     overflow: hidden;
     /* Prevent overflow */
     box-sizing: border-box;
@@ -26,7 +25,7 @@
     color: #eeede7;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0rem;
     height: 100%;
     /* Make sure the typingWrapper fills the height */
     overflow: hidden;
@@ -52,8 +51,13 @@
     }
 }
 
+.typingText {
+    padding: 5px 10px;
+}
+
 .column,
 .rightColumn {
+    border: 2px solid #221616;
     display: block;
     white-space: pre;
     overflow: hidden;
@@ -68,4 +72,38 @@
     .rightColumn {
         display: none;
     }
+}
+
+.tabHeader {
+    display: flex;
+    background-color: #422e2e;
+    border-bottom: 2px solid #131212;
+}
+
+.tab {
+    padding: 8px;
+    background-color: #3f1d1d;
+    border-right: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.tabTitle {
+    margin-right: 10px;
+}
+
+.closeTab {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(230, 103, 103);
+    padding-left: 8px;
+}
+
+.tabContent {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: white;
+    overflow-y: auto;
 }
