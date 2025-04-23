@@ -9,3 +9,40 @@
     padding: 10px 0;
     font-size: 14px;
 }
+
+.footerButtonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: var(--main-width);
+    margin: 16px auto;
+    padding: 0 10px;
+    perspective: 800px;
+}
+
+.footerButton {
+    font-size: 1.2rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    color: #4969a8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
+
+    /* floating look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footerButton:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.footerTextWrapper {
+    display: flex;
+    justify-content: center;
+}
