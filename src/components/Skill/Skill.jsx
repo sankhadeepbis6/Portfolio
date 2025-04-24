@@ -9,68 +9,78 @@ import { TbBrandCSharp } from "react-icons/tb";
 const Skill = ({
     header = "Skills",
 }) => {
+
+    const skills = [
+        {
+            name: "Java",
+            icon: <FaJava className={styles.icon} />,
+        },
+        {
+            name: "Spring Boot",
+            icon: <SiSpringboot className={styles.icon} />,
+        },
+        {
+            name: "React.js",
+            icon: <FaReact className={styles.icon} />,
+        },
+        {
+            name: "JavaScript",
+            icon: <RiJavascriptFill className={styles.icon} />,
+        },
+        {
+            name: "Python",
+            icon: <FaPython className={styles.icon} />,
+        },
+        {
+            name: "HTML",
+            icon: <FaHtml5 className={styles.icon} />,
+        },
+        {
+            name: "CSS",
+            icon: <FaCss3Alt className={styles.icon} />,
+        },
+        {
+            name: "C++",
+            icon: <SiCplusplus className={styles.icon} />,
+        },
+        {
+            name: "MongoDB",
+            icon: <SiMongodb className={styles.icon} />,
+        },
+        {
+            name: "SQL",
+            icon: <BsFiletypeSql className={styles.icon} />,
+        },
+        {
+            name: "C#",
+            icon: <TbBrandCSharp className={styles.icon} />,
+        },
+        {
+            name: "Git",
+            icon: <FaGithub className={styles.icon} />,
+        },
+        {
+            name: "Kafka",
+            icon: <SiApachekafka className={styles.icon} />,
+        },
+        {
+            name: "Generative AI",
+            icon: <RiAiGenerate2 className={styles.icon} />,
+        }
+    ]
+
     return (
         <section className={styles.section}>
             <FadeInSection className={styles.stickyHeader}>
                 {header}
             </FadeInSection>
             <div className={styles.container}>
-                <FadeInSection className={styles.item}>
-                    <div className={styles.title} >Java</div>
-                    <FaJava className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "200ms" }}>
-                    <div className={styles.title} >Spring Boot</div>
-                    <SiSpringboot className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "400ms" }}>
-                    <div className={styles.title} >React.js</div>
-                    <FaReact className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "600ms" }}>
-                    <div className={styles.title} >JavaScript</div>
-                    <RiJavascriptFill className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item}>
-                    <div className={styles.title} >Python</div>
-                    <FaPython className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "200ms" }}>
-                    <div className={styles.title} >HTML</div>
-                    <FaHtml5 className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "400ms" }}>
-                    <div className={styles.title} >CSS</div>
-                    <FaCss3Alt className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "600ms" }}>
-                    <div className={styles.title} >C++</div>
-                    <SiCplusplus className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item}>
-                    <div className={styles.title} >MongoDB</div>
-                    <SiMongodb className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "200ms" }}>
-                    <div className={styles.title} >SQL</div>
-                    <BsFiletypeSql className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "400ms" }}>
-                    <div className={styles.title} >C#</div>
-                    <TbBrandCSharp className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "600ms" }}>
-                    <div className={styles.title} >Git</div>
-                    <FaGithub className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item}>
-                    <div className={styles.title} >Kafka</div>
-                    <SiApachekafka className={styles.icon} />
-                </FadeInSection>
-                <FadeInSection className={styles.item} style={{ transitionDelay: "200ms" }}>
-                    <div className={styles.title} >Generative AI</div>
-                    <RiAiGenerate2 className={styles.icon} />
-                </FadeInSection>
+                {skills.map((skill, index) => (
+                    <FadeInSection className={styles.item} key={index} style={{ transitionDelay: `${(index % 4) * 200}ms` }}>
+                        <div className={styles.title}>{skill.name}</div>
+                        {skill.icon}
+                    </FadeInSection>
+                ))}
             </div>
         </section>
     );

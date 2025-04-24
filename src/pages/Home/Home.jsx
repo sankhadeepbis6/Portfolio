@@ -2,6 +2,7 @@ import CodeBackground from '../../components/CodeBackground/CodeBackground';
 import Education from '../../components/Education/Education';
 import Experience from '../../components/Experience/Experience';
 import Footer from '../../components/Footer/Footer';
+import Overview from '../../components/Overview/Overview';
 import Skill from '../../components/Skill/Skill';
 import Summery from '../../components/Summery/Summery';
 import styles from './Home.module.css';
@@ -65,6 +66,7 @@ const Home = () => {
                     contents={experienceContents} />
                 <Education contents={educationContents} />
                 <Skill header="Skills" />
+                <Overview />
             </section>
             <Footer />
         </div>
