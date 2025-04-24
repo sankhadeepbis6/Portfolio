@@ -4,7 +4,7 @@ import styles from './WaveSVG.module.css';
 const WaveSVG = () => {
     return (
         <div className={styles.canvasContainer}>
-            <svg viewBox="0 0 1440 300" preserveAspectRatio="none" className={styles.canvas}>
+            <svg viewBox="0 0 1440 340" preserveAspectRatio="none" className={styles.canvas}>
                 <defs>
                     <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
                         <feDropShadow
