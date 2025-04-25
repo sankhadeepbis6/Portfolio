@@ -1,7 +1,5 @@
 .cubeContainer {
     perspective: 800px;
-    width: 100px;
-    height: 100px;
 }
 
 .cube {
@@ -14,8 +12,8 @@
 
 .face {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background: #235e63;
     color: white;
     display: flex;
@@ -37,27 +35,27 @@
 }
 
 .front {
-    transform: translateZ(50px);
+    transform: translateZ(100px);
 }
 
 .back {
-    transform: rotateY(180deg) translateZ(50px);
+    transform: rotateY(180deg) translateZ(100px);
 }
 
 .right {
-    transform: rotateY(90deg) translateZ(50px) rotateZ(270deg);
+    transform: rotateY(90deg) translateZ(100px) rotateZ(270deg);
 }
 
 .left {
-    transform: rotateY(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(100px);
 }
 
 .top {
-    transform: rotateX(90deg) translateZ(50px) rotateZ(180deg);
+    transform: rotateX(90deg) translateZ(100px) rotateZ(180deg);
 }
 
 .bottom {
-    transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(100px);
 }
 
 @keyframes rotateCube {
