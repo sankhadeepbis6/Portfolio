@@ -38,6 +38,10 @@ const Summery = () => {
         return () => clearTimeout(timeout);
     }, [text, isDeleting, index]);
 
+    const handleOpenResume = () => {
+        window.open("/resume.pdf", "_blank");
+    };
+
     return (
         <div className={styles.profile}>
             <div className={styles.topRow}>
@@ -58,7 +62,7 @@ const Summery = () => {
                 impactful solutions in sustainability-focused, high-growth environments.
             </p>
             <div className={styles.buttonRow}>
-                <button className={styles.roundButton}>
+                <button className={styles.roundButton} onClick={handleOpenResume}>
                     <FaDownload className={styles.icon} />
                     Resume
                 </button>
@@ -71,7 +75,7 @@ const Summery = () => {
                     Contact
                 </button>
             </div>
-        </div>
+        </div >
     );
 };
 
