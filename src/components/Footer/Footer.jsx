@@ -2,7 +2,30 @@ import styles from "./Footer.module.css";
 import WaveSVG from '../WaveSVG/WaveSVG';
 
 const Footer = () => {
-    const buttons = ['Linkedin', 'Github', 'Gmail', 'Facebook'];
+    const buttons = [
+        {
+            label: 'Linkedin',
+            onCLick: () => openWebsite('https://www.linkedin.com/in/sankhadeep-biswas-1b0a1b1b3/')
+        },
+        {
+            label: 'Github',
+            onCLick: () => openWebsite('https://github.com/sankhadeepbis6')
+        },
+        {
+            label: 'Gmail',
+            onCLick: () => {
+                window.location.href = `mailto:${"sankhadeep.biswas.6@gmail.com"}?subject=${"Contact Me"}`;
+            }
+        },
+        {
+            label: 'Facebook',
+            onCLick: () => openWebsite('https://www.facebook.com/sankhadeep.biswas.7')
+        }
+    ];
+
+    const openWebsite = (website) => {
+        window.open(website, "_blank");
+    };
 
     const handleMouseMove = (e, index) => {
         const btn = e.currentTarget;
@@ -27,14 +50,15 @@ const Footer = () => {
         <footer className={styles.footer}>
             <WaveSVG />
             <div className={styles.footerButtonContainer}>
-                {buttons.map((label, index) => (
+                {buttons.map((item, index) => (
                     <button
                         key={index}
                         className={styles.footerButton}
                         onMouseMove={(e) => handleMouseMove(e, index)}
                         onMouseLeave={resetTilt}
+                        onClick={item.onCLick}
                     >
-                        {label}
+                        {item.label}
                     </button>
                 ))}
             </div>
