@@ -7,13 +7,14 @@
 .stickyHeader {
     position: sticky;
     top: 0;
-    background-color: var(--white-color);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
     font-size: 2rem;
     text-align: left;
     font-weight: bold;
     z-index: 1;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     padding: 8px 0 10px 15px;
 }
 
@@ -39,7 +40,7 @@
 
 .duration {
     font-size: 1.2rem;
-    color: var(--text-color-2);
+    color: var(--light-color);
 }
 
 .description {
@@ -50,5 +51,9 @@
 .institution,
 .title,
 .description {
-    color: var(--text-color);
+    color: var(--light-color);
+}
+
+.card {
+    background-color: var(--tertiary-color);
 }

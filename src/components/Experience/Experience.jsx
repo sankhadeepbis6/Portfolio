@@ -14,7 +14,7 @@ const Experience = ({
                 {header}
             </FadeInSection>
             <FadeInSection>
-                <ContainCard>
+                <ContainCard className={styles.card}>
                     {contents.map((content, index) => (
                         <div key={index} className={styles.content}>
                             <SplitTitle>
