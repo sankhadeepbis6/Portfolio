@@ -59,7 +59,7 @@ const Summery = () => {
             </p>
             <div className={styles.buttonRow}>
                 <a
-                    href="/asset/resume.pdf"
+                    href="/Portfolio/resume.pdf"
                     download="resume.pdf"
                     className={styles.roundButton}
                 >
