@@ -84,6 +84,7 @@
     border: 2px solid #f1f4f7;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .roundButton:hover {

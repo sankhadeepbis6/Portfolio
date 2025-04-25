@@ -38,10 +38,6 @@ const Summery = () => {
         return () => clearTimeout(timeout);
     }, [text, isDeleting, index]);
 
-    const handleOpenResume = () => {
-        window.open("/Portfolio/resume.pdf", "_blank");
-    };
-
     return (
         <div className={styles.profile}>
             <div className={styles.topRow}>
@@ -62,18 +58,30 @@ const Summery = () => {
                 impactful solutions in sustainability-focused, high-growth environments.
             </p>
             <div className={styles.buttonRow}>
-                <button className={styles.roundButton} onClick={handleOpenResume}>
+                <a
+                    href="/asset/resume.pdf"
+                    download="resume.pdf"
+                    className={styles.roundButton}
+                >
                     <FaDownload className={styles.icon} />
                     Resume
-                </button>
-                <button className={styles.roundButton}>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/sankhadeep-biswas-a8aaa9173/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.roundButton}
+                >
                     <FaLinkedin className={styles.icon} />
                     LinkedIn
-                </button>
-                <button className={styles.roundButton}>
+                </a>
+                <a
+                    href={`mailto:${"sankhadeep.biswas.6@gmail.com"}?subject=Contact Me`}
+                    className={styles.roundButton}
+                >
                     <FaEnvelope className={styles.icon} />
                     Contact
-                </button>
+                </a>
             </div>
         </div >
     );
