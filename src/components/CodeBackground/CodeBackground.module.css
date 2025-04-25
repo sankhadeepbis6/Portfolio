@@ -104,6 +104,6 @@
 .tabContent {
     flex-grow: 1;
     padding: 15px;
-    background-color: white;
+    background-color: var(--white-color);
     overflow-y: auto;
 }

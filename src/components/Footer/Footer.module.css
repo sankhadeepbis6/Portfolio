@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--tertiary-color);
-    color: white;
+    color: var(--white-color);
     text-align: center;
 }
 

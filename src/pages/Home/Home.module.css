@@ -1,6 +1,6 @@
 .heroSection {
     height: 100vh;
-    color: white;
+    color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,5 +27,5 @@
     z-index: 1;
     /* Above the background */
     padding: 40px;
-    color: white;
+    color: var(--white-color);
 }

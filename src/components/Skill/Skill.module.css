@@ -38,7 +38,7 @@
     border: 1px solid var(--light-color);
     box-sizing: border-box;
     color: var(--text-color);
-    background-color: white;
+    background-color: var(--white-color);
     transition: transform 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
