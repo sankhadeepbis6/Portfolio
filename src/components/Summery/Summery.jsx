@@ -59,8 +59,9 @@ const Summery = () => {
             </p>
             <div className={styles.buttonRow}>
                 <a
-                    href="/Portfolio/resume.pdf"
-                    download="resume.pdf"
+                    href="https://drive.google.com/file/d/1nvI45XfkvNf2CTyiZtOV_3MxTmzRXIpq/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={styles.roundButton}
                 >
                     <FaDownload className={styles.icon} />
