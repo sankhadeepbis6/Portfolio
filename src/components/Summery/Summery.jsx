@@ -39,7 +39,7 @@ const Summery = () => {
     }, [text, isDeleting, index]);
 
     const handleOpenResume = () => {
-        window.open("/resume.pdf", "_blank");
+        window.open("/Portfolio/resume.pdf", "_blank");
     };
 
     return (
