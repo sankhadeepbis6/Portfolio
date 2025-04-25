@@ -16,7 +16,7 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 15%;
 }
 
 .profileName {
@@ -31,7 +31,7 @@
 
 .profileDescription {
     margin-top: 0.6rem;
-    color: #ffffff;
+    color: var(--white-color);
     text-align: left;
 }
 
@@ -42,14 +42,14 @@
 }
 
 .typingText {
-    color: #f0e660;
+    color: var(--quaternary-color-2);
 }
 
 .cursor {
     display: inline-block;
     width: 1ch;
     animation: blink 0.7s infinite;
-    color: #f0e660;
+    color: var(--quaternary-color-2);
 }
 
 @keyframes blink {
@@ -79,17 +79,17 @@
     border-radius: 999px;
     font-size: 1rem;
     font-weight: 500;
-    color: #f1f4f7;
+    color: var(--light-color);
     background-color: transparent;
-    border: 2px solid #f1f4f7;
+    border: 2px solid var(--light-color);
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .roundButton:hover {
-    background-color: #f1f4f7;
-    color: #02444d;
+    background-color: var(--light-color);
+    color: var(--primary-color);
 }
 
 .icon {

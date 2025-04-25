@@ -22,7 +22,7 @@
     white-space: pre;
     line-height: 1.5;
     font-size: 1rem;
-    color: #eeede7;
+    color: var(--light-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0rem;
@@ -36,7 +36,7 @@
     display: inline-block;
     width: 1ch;
     animation: blink 0.7s infinite;
-    color: #f0e660;
+    color: var(--light-color);
 }
 
 @keyframes blink {
@@ -57,7 +57,7 @@
 
 .column,
 .rightColumn {
-    border: 2px solid #221616;
+    border: 2px solid var(--dark-color);
     display: block;
     white-space: pre;
     overflow: hidden;
@@ -76,14 +76,14 @@
 
 .tabHeader {
     display: flex;
-    background-color: #422e2e;
-    border-bottom: 2px solid #131212;
+    background-color: var(--dark-color);
+    border-bottom: 2px solid var(--dark-color);
 }
 
 .tab {
     padding: 8px;
-    background-color: #3f1d1d;
-    border-right: 1px solid #000000;
+    background-color: var(--secondary-color);
+    border-right: 1px solid var(--black-color);
     display: flex;
     align-items: center;
     justify-content: space-between;

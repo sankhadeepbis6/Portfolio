@@ -46,9 +46,18 @@
 
 .duration {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--text-color-2);
 }
 
 .description {
     text-align: left;
+}
+
+.stickyHeader,
+.degree,
+.institution,
+.title,
+.score,
+.description {
+    color: var(--text-color);
 }
