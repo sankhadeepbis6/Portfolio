@@ -51,7 +51,7 @@ const Summery = () => {
                 </div>
             </div>
             <p className={styles.profileDescription}>
-                3+ years of experience in Full-Stack development with expertise in
+                4 years of experience in Full-Stack development with expertise in
                 modular, test-driven development using React.js and Spring Boot. Skilled in
                 CI/CD, REST APIs, and secure coding, with a collaborative approach to
                 delivering high-quality, resilient interfaces. Passionate about driving
